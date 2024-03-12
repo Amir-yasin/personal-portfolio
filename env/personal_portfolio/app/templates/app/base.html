@@ -1,0 +1,246 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
+<img src="{% static 'images/'%}" alt="">
+<h1>hello world</h1>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amir yasin's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="static/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    
+        
+        
+    <header>
+        <div class="nav-container">
+            <nav class="navbar navbar-expand-lg bg-dark text-white fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Amir Yasin</a> 
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+                        <span class="navbar-toggler-icon"></span>    
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0  ">
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#Skills">SKILLS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#projects">PROJECTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold contact" href="#contact">CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                            <button class="btn btn-primary" id="mode-toggle"> Dark/light Mode</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div><br><br>
+        
+    </header>
+    {% block content %}
+
+    <section id="hero" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+               
+                <div class="col-md-7 ">
+                    <h1 class="hello">Hi, it's Amir Yasin </h1><br>
+                    <h2 class="scroll">Welcome to my Portfolio Website</h2>
+                    <p class="lead scroll">I'm a Python developer specializing in Django and Flask. 
+                        With a focus on crafting efficient and scalable web solutions, 
+                        Let's create something amazing together.</p>
+                        <br>
+                     <div class="two-btn scroll">
+                     <a href="#contact" class="btn btn-primary btncontact">Contact Me</a>
+                     <div><a href="static\img\Amir-Yasin's resume.pdf" download="Amir_Yasin_Resume.pdf"></div>
+                     <button class="btn btn-outline-primary">Download CV</button></div>
+                     <a href=""></a>
+
+                    </div>
+                <div class="col-md-5 scroll image-container">
+                    <img src="{% static 'images/amir-img4-2.jpg'%}" alt="Amir Yasin" class=" img-fluiid floating-image ">
+
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <hr>
+    </section>
+
+    <section id="about" class=" py-4 ">
+        <div class="container ">
+            <h1 class=" blue scroll">About Me</h1>
+            <p>Hello! I'm Amir Yasin, a Python developer with expertise in Django and Flask frameworks. With several years of experience in web development, I've crafted applications, leveraging Python's robustness and versatility.</p>
+            <p>My journey in software engineering began with a fascination for problem-solving and a love for creating elegant solutions. </p>
+            <p>As a Python enthusiast, I'm deeply involved in the open-source community, contributing to projects and sharing knowledge with fellow developers. My commitment to excellence and continuous learning drives me to stay updated with the latest industry trends and best practices.</p>
+            <p>I'm enthusiastic about collaborating with like-minded professionals and contributing to impactful projects that make a difference.</p>
+            <p>Feel free to explore my portfolio and get in touch to discuss how we can work together to bring your ideas to life!</p>
+            </p>
+          
+    </div>
+    <hr>
+    </section>
+    <section id = "Skills" class = "py-4 ">
+
+        <div class="icon-container">
+            <h1 class="blue scroll">Skills</h1>
+            <div class="row scroll">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-None-2">
+                    <img class="html pli" src="{% static 'images/html.svg'%}" alt="html">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-None-2">
+                    <img class="css pli" src="{% static 'images/css.svg'%}" alt="css">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-None-2">
+                    <img class="javaScript pli" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript"/>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-None-2">
+                    <img class="bootstrap pli" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap"/>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-None-2">
+                    <img class="python pli" src="{% static 'images/python.svg'%}" alt="python">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-None-2">
+                    <img class="django pli" src="{% static 'images/django.svg'%}" alt="django">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-None-2">
+                    <img class="flask pli" src="{% static 'images/flask.svg'%}" alt="flask">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-None-2">
+                    <img class="mysql pli" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original-wordmark.svg"  alt="mysql">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-None-2">
+                    <img class="postgres pli" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="postgres"/>
+                </div>
+            </div>
+        </div>
+          <hr>
+    </section>
+
+    <section id="projects" class="py-5 ">
+        <div class="container">
+            <h1 class="blue ">Projects</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Hakim center</h3>
+                            <img src="{% static 'images/hakim-center.png'%}" alt="project 1 img" class="img-project p1">
+
+                                
+                            <p class="card-text">Description of Project </p>
+                           <p>HakimCenter is a platform that connects clients with experienced and compassionate nurses who can provide personalized care and support. </p>
+                            <a href="https://github.com/Amir-yasin/hakim-center" class="btn btn-primary">View on github</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">ABK web developers</h3>
+                            <img src="{% static 'images/abk.png'%}" alt="project 1 img" class="img-project p2">
+
+                            <p class="card-text">Description of Project </p>
+                            <p>ABK is a web developers team website that helps the developers to take appointments and also get in touch with their clients.
+                            </p>                          
+                             <a href="https://github.com/Amir-yasin/IP-Project-Website" class="btn btn-primary">View on github</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p3 ">
+                    <div class="card mb-4 p3">
+                        <div class="card-body">
+                            <h3 class="card-title">student management system</h3>
+                            <img src="{% static 'images/student-management-system.png'%}" alt="project 1 img" class="img-project ">
+                            <p class="card-text">Description of Project </p>
+                            <p>student management system is a system that helps school directors to manage students and also it uses the single linked list algorithm. </p>
+                            <a href="https://github.com/Amir-yasin/single-linked-list" class="btn btn-primary">View on github</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <section id="contact" class=" py-5 ">
+        <div class="container">
+
+                <form class="form-con" action="https://formspree.io/f/xyyrjwlp" method="POST">
+                    {% csrf_token  from django%}
+                    <h1 class="blue">Contact Me</h1>
+                    <h5>Feel free to reach out to me for collaboration, job opportunities, or just to say hello!✌️</h5>
+                    <br>
+                    <div class="mb-3">
+                       
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control scroll" id="name" name="name" required>
+                        <label for="email" class="form-label ">Email</label>
+                        <input type="email" class="form-control scroll" id="email" name="email" required>
+                        <label for="message" class="form-label ">Message</label>
+                        <textarea class="form-control scroll" id="message" name="message" rows="2" required></textarea>
+                            <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <br>
+                    <br>
+                    <br>
+                </form>
+    
+    <div class="fa-container text-center">
+        <a href="https://t.me/Amir_Yasin" class="fa fa-telegram "></a>
+        <a href="mailto:Amiryasin3262@gmail.com" class="fa fa-envelope"></a>
+        <a href="https://github.com/Amir-yasin" class="fa fa-github"></a>
+        <a href="tel:+251966013262" class="fa fa-phone"></a>
+
+    </div>        </div>
+
+    </div>
+</section>
+
+    <footer class="bg-dark text-white py-4 ">
+        <div class="container text-center">
+          
+            <p>  &copy; 2024 Amir Yasin. All rights reserved.</p>
+        </div>
+    </footer>
+    {% endblock content %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+
+</body>
+</html>
+
+
+
+
+
+
