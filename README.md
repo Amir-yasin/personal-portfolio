@@ -1,4 +1,4 @@
-# 💫 About Me:
+ # 💫 About Me:
 Aspiring Python developer with a focus on Django<br>and Flask web development, and a solid<br>background in computer science. Currently<br>studying computer science at St. Mary's University,<br>I have a strong interest in creating dynamic and<br>user-friendly web applications.<br>In addition to web development, I also have skills in<br>data analysis. I can work with complex data to find<br>useful insights, which can help in making informed<br>decisions. My web development and data analysis<br>skills are separate, but I am committed to doing my<br>best in both areas.<br>I am eager to apply and grow my skills in both web<br>development and data analysis, whether it’s<br>building reliable web applications or analyzing data<br>to provide valuable insights.<br>
 
 
