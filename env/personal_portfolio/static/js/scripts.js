@@ -57,3 +57,4 @@ const image = document.querySelector('.image-container img');
 setTimeout(function() {
   image.classList.add('fade-in');
 }, 100);
+
