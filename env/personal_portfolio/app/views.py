@@ -6,3 +6,4 @@ def base(request):
     return render(request, 'app/base.html')
 
 
+
